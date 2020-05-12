@@ -26,7 +26,7 @@ class menu extends Phaser.Scene {
 	b_play.setInteractive();
 	b_play.on("pointerover",()=>{
 		//b_play.setTint(0xff0000);
-		//b_play.setScale(1.5);
+		b_play.setScale(1.5);
 	})
 	b_play.on("pointerout",()=>{
 		b_play.setScale(1);

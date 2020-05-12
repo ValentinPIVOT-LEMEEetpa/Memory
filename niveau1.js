@@ -28,21 +28,21 @@ class niveau1 extends Phaser.Scene {
 //le design de niveau et incorporation du joueur
   create () {
 
-    this.add.image(400,300,'background');
-
+    //this.add.image(400,300,'background');
+	var cards;
 
     cards = this.physics.add.staticGroup();
 
-        cards.create(1000, 30, 'as-carreau');
-        cards.create(1000, 970, 'as-coeur');
-      cards.create(30, 500, 'as-trefle');
+    cards.create(90, 110, 'as-carreau');
+    cards.create(700, 110, 'as-coeur');
+    cards.create(0, 0, 'as-trefle');
 
-        cards.create(1970, 500, 'king-coeur');
-        cards.create(39, 40, 'king-trefle');
-        cards.create(1961, 38, 'king-carreau');
+    cards.create(300, 110, 'king-coeur');
+    cards.create(500, 110, 'king-trefle');
+    cards.create(0, 0, 'king-carreau');
 
-        cards.create(40, 961, 'coin_down_left');
-        cards.create(1961, 960, 'coin_down_right');
+    cards.create(0, 0, 'coin_down_left');
+    cards.create(0, 0, 'coin_down_right');
 
 
   }
