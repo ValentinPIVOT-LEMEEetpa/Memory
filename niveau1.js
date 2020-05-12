@@ -9,7 +9,7 @@ class niveau1 extends Phaser.Scene {
 //===================================================================================================================
 //chargement des assets utilisé dans la scene
   preload () {
-  	this.add.image('back','assets/dos-carte.png');
+  	this.load.image('back','assets/dos-carte.png');
 
   }
 
